@@ -1,3 +1,9 @@
+import { Directive, HostListener, HostBinding, ElementRef } from '@angular/core';
+import { AppComponent } from './app.component';
+@Directive({
+    selector: '[customdropdown]'
+})
+export class CustomDropdownDirective {
 
     isOpen = false;
     constructor(private _el: ElementRef, private cust: AppComponent) {
@@ -35,3 +41,4 @@
             }
         }
     }
+}
