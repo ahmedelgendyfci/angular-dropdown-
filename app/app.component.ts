@@ -12,4 +12,6 @@ export class AppComponent {
     this.collapsed = !this.collapsed;
   }
 
+  //hello everybody
+
 }
